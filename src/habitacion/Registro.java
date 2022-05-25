@@ -25,38 +25,35 @@ public class Registro {
      correo  = JOptionPane.showInputDialog("Ingrese el correo del paciente");
      
      // Convertir String a Date https://www.aluracursos.com/blog/como-convertir-string-para-date-en-java
-     fEntrada  = JOptionPane.showInputDialog("Ingrese fecha de ingreso del paciente (dd/mm/yyyy)");
-     fSalida  = JOptionPane.showInputDialog("Ingrese fecha de salida del paciente (dd/mm/yyyy)");
+     fEntrada  = JOptionPane.showInputDialog("Ingrese fecha de ingreso del paciente (dd/mm/yyyy )");
+     fSalida  = JOptionPane.showInputDialog("Ingrese fecha de salida del paciente (dd/mm/yyyy )");
      
      SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy"); //Formato de fecha https://guru99.es/java-date/
-     Date fechaEntrada = formatoFecha.parse(fEntrada); 
-     Date fechaSalida = formatoFecha.parse(fSalida);
      
+     //Video de apoyo sobre como usar el metodo Date https://www.youtube.com/watch?v=M1S3LbCxD-M
      
+     Date fechaEntrada = new Date(); 
+     Date fechaSalida = new Date();
      
+     fechaEntrada = formatoFecha.parse(fEntrada);
+     fechaSalida = formatoFecha.parse(fSalida);
+     
+     // Date Difference: https://code.sololearn.com/czGJlt4Z0T23/#java
+
+     long calc1=(fechaEntrada.getTime()) - (fechaSalida.getTime());
+     
+     int calc2=(int)(Math.abs(calc1/(24*60*60*1000)));
+         
      JOptionPane.showMessageDialog(null, "ID Paciente: " + id + "\n"
                     + "Telefono: " + telefono + "\n"
                     + "Nombre del paciente: " + nombre + "\n"
                     + "Telefono del paciente: " + telefono + "\n"
                     + "Correo del paciente: " + correo + "\n"
                     + "Fecha de ingreso: " + fechaEntrada + "\n"
-                    + "Fecha de salida: " + fechaSalida);
-
-        
-        // Date Difference: https://code.sololearn.com/czGJlt4Z0T23/#java
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+                    + "Fecha de salida: " + fechaSalida + "\n"
+                    + "Total de dias ingresado: " + calc2 + " dias");
         
     }// Cierre metodo main
     
 }// Cierre Clase registro
+
