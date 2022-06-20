@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <EditText
+        android:id="@+id/tUsuario"
+        android:layout_width="250dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bordestexto"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/textUsuario"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/tContrasena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/tContrasena"
+        android:layout_width="235dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/bordestexto"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/textContraseña"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/bValidar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bValidar"
+        android:layout_width="227dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="368dp"
+        android:background="@drawable/bordeboton"
+        android:text="@string/buttonValidar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bRegistrarse"
+        android:layout_width="168dp"
+        android:layout_height="64dp"
+        android:text="@string/buttonRegistrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bValidar"
+        app:layout_constraintVertical_bias="0.2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

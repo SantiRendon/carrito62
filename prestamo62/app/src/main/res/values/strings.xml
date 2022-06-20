@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Prestamo Mermillion</string>
+    <string name="author">Creado por Santiago Rendón</string>
+
+    <string name="textUsuario">Digite Usuario</string>
+    <string name="textContraseña">Digite Contraseña</string>
+    <string name="buttonValidar">Validar</string>
+
+    <string name="buttonRegistrar">Registrese Aquí!</string>
+
+
+    <string name="tRegistro1">Registre su nombre</string>
+    <string name="tRegistro2">Registre su correo</string>
+    <string name="tRegistro3">Registre su contraseña</string>
+    <string name="tRegistro4">Registre su identificacion</string>
+
+    <string name="bRegistro1">Cancelar</string>
+    <string name="bRegistro2">Validar</string>
+
+    <string name="mAlert1">Por favor, no deje campos vacíos</string>
+    
+</resources>
